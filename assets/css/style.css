@@ -541,9 +541,12 @@ main {
   z-index: -1;
 }
 
-.service-icon-box { margin-bottom: 10px; }
+.service-icon-box {margin-bottom: 10px; }
 
-.service-icon-box img { margin: auto; }
+.service-icon-box img { 	
+  margin: auto; 
+  mix-blend-mode: multiply;
+}
 
 .service-content-box { text-align: center; }
 
