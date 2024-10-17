@@ -545,7 +545,6 @@ main {
 
 .service-icon-box img { 	
   margin: auto; 
-  mix-blend-mode: overlay;
 }
 
 .service-content-box { text-align: center; }
