@@ -160,7 +160,9 @@ body { background: var(--smoky-black); }
 
 
 
-
+.avatarimage {
+  border-radius: 25px;
+}
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
