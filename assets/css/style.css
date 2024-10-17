@@ -546,7 +546,7 @@ main {
 .service-icon-box img { 	
   margin: auto; 
   height: auto;
-  width: 20px;
+  width: 40px;
 }
 
 .service-content-box { text-align: center; }
