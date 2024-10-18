@@ -166,7 +166,7 @@ body { background: var(--smoky-black); }
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
-.h4 service-item-title{
+.h4_service-item-title{
   color: var(--orange-yellow-crayola);
 }
 .sidebar,
