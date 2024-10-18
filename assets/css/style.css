@@ -168,6 +168,7 @@ body { background: var(--smoky-black); }
 \*-----------------------------------*/
 .h4_service-item-title{
   color: var(--orange-yellow-crayola);
+  text-decoration: underline;
 }
 .sidebar,
 article {
