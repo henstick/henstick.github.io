@@ -1,42 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beautiful Website</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henry Stickel's Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/HenryWebsiteLogo-removebg-preview.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="logo">MyBrand</div>
-        <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button class="menu-toggle" id="menu-toggle">☰</button>
-    </nav>
 
-    <header class="hero" id="home">
-        <h1>Welcome to My Website</h1>
-        <p>Clean, responsive, and modern design.</p>
-        <a href="#features" class="btn">Explore Features</a>
-    </header>
+  <!--
+    - #MAIN
+  -->
 
-    <section class="features" id="features">
-        <h2>Features</h2>
-        <div class="feature-grid">
-            <div class="feature-card">Fast</div>
-            <div class="feature-card">Responsive</div>
-            <div class="feature-card">Modern</div>
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/Henry_Stickel_Senior_Photo.jpg" alt="Henry Stickel" width="80" class = "avatarpicture">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Henry Stickel">Henry Stickel</h1>
+
+          <p class="title">Business and CS Student</p>
         </div>
-    </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 MyBrand. All rights reserved.</p>
-    </footer>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
 
-    <script src="script.js"></script>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:hstick@uw.edu" class="contact-link">hstick@uw.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12066045610" class="contact-link">206-604-5610</a>
+            </div>
+
+          </li>
+
+          
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Seattle, Washington</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          
+
+          
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/henry_stickel/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am a student in the Foster School of Business at the University of Washington looking to major in Finance and Information Systems with an interest in Computer Science and Statistics.
+          </p>
+
+          <p>
+            Having already taken on a number of projects in my life - conceptualizing and developing a social media app, creating an analytics model for my high school’s football team, and starting my own SAT/ACT tutoring business - I have some proficiency in disciplines like programming and statistics. More importantly, however, I am hungry to learn, a critical thinker, and an effective communicator which makes anything accessible.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm interested in</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+
+              <div class="service-content-box">
+                <h4 class="h4_service-item-title">Programming</h4>
+
+                <p class="service-item-text">
+                  Portfolio of projects in a range of languages; upper level courses at UW.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              
+
+              <div class="service-content-box">
+                <h4 class="h4_service-item-title">Finance</h4>
+
+                <p class="service-item-text">
+                  Knowledge of Economic concepts, Excel, and ERP software.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              
+
+              <div class="service-content-box">
+                <h4 class="h4_service-item-title">Data Science</h4>
+
+                <p class="service-item-text">
+                  Stats and visualizaiton programming knowledge in Python, basic understanding of Machine Learning
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              
+
+              <div class="service-content-box">
+                <h4 class="h4_service-item-title">Sports Analytics</h4>
+
+                <p class="service-item-text">
+                  I am a massive fan of college football and have created several analytics models for it
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        
+
+
+        <!--
+          - clients
+        -->
+
+       
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University of Washington</h4>
+
+              <span>2023 — 2027</span>
+
+              <p class="timeline-text">
+                The Foster School of Business at the University of Washington. I also take CS coursework.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Lakeside school</h4>
+
+              <span>2016 — 2023</span>
+
+              <p class="timeline-text">
+                A well-known private school in Shoreline, Washington with incredible funding, teachers, and classmates.
+              </p>
+
+            </li>
+
+  
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Henry Score</h4>
+
+              <span>2022 — Present</span>
+
+              <p class="timeline-text">
+                Created SAT/ACT tutor business to maximize student’s test preparation and raise scores.                
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">National Nordic Museum	Events Budgeting Intern</h4>
+
+              <span>2019 — Present</span>
+
+              <p class="timeline-text">
+                Worked to forecast and record event attendance and other relevant statistics at the National Nordic Museum
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Assistant Coach</h4>
+
+              <span>2022 — Present</span>
+
+              <p class="timeline-text">
+                Assisted in a variety of duties within the football and basketball programs, stats analyst, assistant coach, etc.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        
+
+      </article>
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24176.615055601212!2d-122.3482!3d47.6062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549015d59e19e76f%3A0xefaab4c0b5adad4b!2sSeattle%2C%20WA%2C%20USA!5e0!3m2!1sen!2sus!4v1647608789441!5m2!1sen!2sus"
+
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://formspree.io/f/mwpkkapn" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
