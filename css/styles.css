@@ -11081,9 +11081,8 @@ body {
   line-height: 2.5rem;
   letter-spacing: 0.8rem;
   white-space: nowrap;
-  /* background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
-  */
-  background: rgba(255,255,255,0.9);
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, .4));
+
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
