@@ -108,6 +108,13 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.threats-container {
+      display: flex; /* Use flexbox to align children horizontally */
+      justify-content: space-between; /* Ensures space between text and image blocks */
+      padding: 20px; /* Adds padding around the container */
+}
+
+
 hr {
   margin: 1rem 0;
   color: inherit;
