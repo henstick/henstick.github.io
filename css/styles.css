@@ -156,6 +156,24 @@ h3, .h3 {
     font-size: 1.75rem;
   }
 }
+.interactive-iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background: transparent;
+        }
+        .interactive-iframe {
+            width: 90%;
+            height: 500px;
+            border: none;
+            background: transparent;
+            transition: transform 0.3s ease-in-out;
+        }
+        .interactive-iframe:hover {
+            transform: scale(1.05);
+        }
 
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
