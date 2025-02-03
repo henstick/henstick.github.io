@@ -163,7 +163,7 @@ h3, .h3 {
 
 .interactive-iframe {
     width: 100%; /* Ensures iframe takes up full container width */
-    height: 500px; /* Adjust as needed */
+    height: 550px; /* Adjust as needed */
     border: none; /* Removes iframe border */
     background: transparent;
     transition: transform 0.3s ease-in-out;
