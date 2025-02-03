@@ -623,7 +623,7 @@ progress {
   color: #6c757d;
 }
 .blockquote-footer::before {
-  content: "— ";
+  content: "— ";
 }
 
 .img-fluid {
@@ -11275,3 +11275,38 @@ body {
     }
 }
 
+
+
+/* Adjust text box width and reduce vertical spacing on larger screens */
+@media (min-width: 1200px) {
+    .about-section .container {
+        max-width: 75%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .about-section .col-lg-6 {
+        max-width: 80%;
+        text-align: left;
+    }
+}
+
+/* Improve interactive graph styling */
+.interactive-iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background: transparent;
+}
+.interactive-iframe {
+    width: 95%;
+    height: 600px;
+    border: none;
+    background: transparent;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.interactive-iframe:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
