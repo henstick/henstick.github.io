@@ -94,7 +94,23 @@
     scroll-behavior: smooth;
   }
 }
-
+body {
+                font-size: 1.2rem;
+            }
+            .about-section {
+                padding: 4rem 0;
+            }
+            .about-section .container {
+                max-width: 1200px;
+            }
+            .text-container {
+                text-align: left;
+                width: 100%;
+            }
+            .about-section img {
+                max-width: 100%;
+                height: auto;
+            }
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
