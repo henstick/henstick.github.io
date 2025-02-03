@@ -157,22 +157,26 @@ h3, .h3 {
   }
 }
 .interactive-iframe-container {
-    display: block; 
-    margin-bottom: 20px; 
-    width: 100%;
+    width: 100%; /* Ensures full width within the column */
+    margin-bottom: 20px; /* Adds spacing between each iframe */
 }
 
 .interactive-iframe {
-    width: 90%; 
-    height: 500px; 
-    border: none; 
-    margin: 0 auto; 
-    background: transparent; 
+    width: 100%; /* Ensures iframe takes up full container width */
+    height: 500px; /* Adjust as needed */
+    border: none; /* Removes iframe border */
+    background: transparent;
     transition: transform 0.3s ease-in-out;
 }
 
 .interactive-iframe:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05); /* Adds hover effect for interactivity */
+}
+
+.col-lg-6 {
+    display: flex; /* Ensures text and graphs align properly */
+    flex-direction: column; /* Stacks content vertically in the column */
+    justify-content: flex-start; /* Aligns content to the top */
 }
 
 
