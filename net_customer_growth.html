@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Net Customer Growth (Millions) Over Bank</title>
+    <script src="https://cdn.plot.ly/plotly-2.4.1.min.js"></script>
+    <style>
+        body { background-color: #212529; color: #ffffff; font-family: Arial, sans-serif; text-align: center; }
+        .plot-container { width: 90%; margin: auto; padding: 20px; background-color: #1a1a1a; border-radius: 10px; box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1); }
+    </style>
+</head>
+<body>
+    <div class="plot-container">
+        <div id="net_growth_chart"></div>
+    </div>
+    <script>
+        var data = [{
+            x: ["MoneyLion", "Banco Inter", "Wise", "Bunq", "Jago", "SoFi", "KakaoBank", "Monzo", "Dave"],
+            y: [7.7, 5.7, 5.4, 3.8, 3.3, 2.5, 2.4, 2.3, 2.1],
+            type: 'bar',
+            marker: { color: '#636efa' }
+        }];
+
+        var layout = {
+            title: 'Net Customer Growth (Millions) Over Bank',
+            paper_bgcolor: '#212529',
+            plot_bgcolor: '#212529',
+            font: { color: '#ffffff' },
+            xaxis: { title: 'Bank' },
+            yaxis: { title: 'Net Customer Growth (Millions)' }
+        };
+
+        Plotly.newPlot('net_growth_chart', data, layout);
+    </script>
+</body>
+</html>
